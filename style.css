@@ -13,6 +13,10 @@
   margin: 0;
 }
 
+.main {
+  min-height: 100vh;
+}
+
 .menu-button, .icons__element, .settings-icons__element {
   border: none; 
   background: transparent; 
@@ -125,11 +129,12 @@
   display: flex;
   max-height: 40px;
   overflow-x: auto;
+  scrollbar-width: none;
   gap: 10px;
 }
 
 .services__button {
-  padding: 5px 15px 5px 15px;
+  margin: 5px 10px 5px 10px;
   white-space: nowrap;
   background-color: #F8F8F8;
   border: none;
@@ -171,6 +176,7 @@
   margin-top: 10px;
   margin-bottom: 20px;
   width: 100%;
+  border-radius: 5px;
 }
 
 @media (min-width: 796px) {
@@ -223,7 +229,8 @@
 
 @media (min-width: 1120px) {
   .body {
-    min-width: 1120px;
+    margin: 0 auto;
+    max-width: 1120px;
   }
 
   .header--modificate {
